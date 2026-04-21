@@ -1,0 +1,8 @@
+model.pt
+models/model.pt
+**/*.pt
+__pycache__/
+build/
+*pb2*.py
+venv/
+.venv/

@@ -1,0 +1,7 @@
+torch
+transformers
+grpcio
+grpcio-tools
+protobuf
+numpy
+datasets

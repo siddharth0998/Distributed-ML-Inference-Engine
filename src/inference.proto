@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// This defines the namespace for our generated C++ code
+package inference;
+
+// This is our Server
+service InferenceEngine {
+    // This is our endpoint
+    rpc Predict (PredictRequest) returns (PredictResponse);
+}
+
+// The incoming data format
+message PredictRequest {
+    string text = 1;
+}
+
+// The outgoing data format
+message PredictResponse {
+    repeated float logits = 1;
+    string status = 2;
+}
