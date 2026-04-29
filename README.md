@@ -26,10 +26,18 @@ This project serves a DistilBERT sentiment model from a C++ gRPC server using Li
 
 1. Docker Desktop running (recommended path).
 2. Python 3.10+ for exporter/client/load test.
-3. Python packages:
+3. Python Virtual Environment (Highly Recommended):
+   To avoid version conflicts with other projects, it is highly recommended to use an isolated environment.
 
 ```bash
-pip install torch transformers grpcio numpy datasets
+# 1. Create the virtual environment
+python -m venv venv
+
+# 2. Activate it
+source venv/bin/activate
+
+# 3. Install all exact required packages
+pip install -r requirements.txt
 ```
 
 ## Quick start (Docker)
